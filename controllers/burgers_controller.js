@@ -4,7 +4,7 @@ var router = express.Router();
 var burger = require("../models/burger.js");
 
 router.get("/", function (req, res) {
-  burger.all(function (data) {
+  burger.selectAll(function (data) {
     var hbsObject = {
       burgers: data
     };
@@ -13,7 +13,7 @@ router.get("/", function (req, res) {
 });
 
 router.post("/api/burgers", function (req, res) {
-  burger.create(req.body, function (result) {
+  burger.insertOne(req.body, function (result) {
     res.json({ id: result.insertId });
   });
 });
@@ -21,7 +21,7 @@ router.post("/api/burgers", function (req, res) {
 router.put("/api/burgers/:id", function (req, res) {
   let condition;
 
-  burger.update(condition,req.params.id, function (result) {
+  burger.updateOne(condition,req.params.id, function (result) {
     if (result.changedRows == 0) {
       return res.status(404).end(); // if id don't exists
     } else {
