@@ -105,6 +105,3 @@ dist
 
 # DStore
 .DStore
-
-# Node Modules
-node_modules/
