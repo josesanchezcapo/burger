@@ -1,4 +1,7 @@
 # Eat-Da-Burger!
+
+![Database Schema](public/assets/img/eat-da-burger_1.png)
+
  ````
 ## Project Description
 
