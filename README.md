@@ -19,8 +19,18 @@ This burger logger use MySQL, Node, Express , Handlebars and a homemade ORM,(Obj
 
 ````
 ## Table of Content
+* [installation](#Installation) 
+* [Questions](#Questions)
+* [License](#License)   
 
+````
 
+````
+## Installation
+
+npm install
+
+````
 ````
 ## Questions
 For any questions, please reach out to me:
