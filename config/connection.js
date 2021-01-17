@@ -13,14 +13,15 @@ if(process.env.JAWSOB_URL){
     database: "kkwi64n1pic92l0y"
   })
 }
-/*var connection = mysql.createConnection({
+/*
+var connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
   password: "Sql01!!??",
   database: "burgers_db"
 });
-*/
+
 
 
 connection.connect(function(err) {
@@ -30,6 +31,6 @@ connection.connect(function(err) {
   }
   console.log("connected as id " + connection.threadId);
 });
-
+*/
 connection.connect();
 module.exports = connection;
