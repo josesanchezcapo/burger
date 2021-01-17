@@ -1,0 +1,21 @@
+<li style="list-style-type: none;">
+	<div class="container">
+		<div class="row">
+
+			<div class="container">
+				<div class="row">
+					<div class="col" style="text-align: left; font-family: 'Domine', serif;">
+						<h4>{{burger_name}}</h4>
+					</div>
+					<div class="col">
+						{{#unless devoured}}
+						<button style="font-family: 'Potta One', cursive;" type="button" class="devour btn btn-primary" data-id="{{id}}" data-newsleep="{{sleep}}">
+							Devour it!
+						</button>
+						{{/unless}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
